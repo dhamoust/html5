@@ -12,6 +12,25 @@
     <script type="text/javascript">var presenterNode='##dopPresenter##';</script>
     <script type="text/javascript" src="data/common/script.js"></script>
     <script type="text/javascript" src="data/player/player.js"></script>
+    
+    <script> function pppp(){
+    
+        alert("test");
+        const text = '{"CGI":"CGIURL.com", "NIIT":"NIITURL.com", "city":"citiurl"}';
+        const obj = JSON.parse(text);
+      
+        localStorage.setItem("user", "CGI");    
+        localStorage.getItem("user");  
+        if(localStorage.getItem("user") == "CGI"){
+           alert(obj.CGI);
+           document.getElementById("urlholder").innerHTML = "<a href='cgi.com'/>";    
+            
+        }
+        if(localStorage.getItem("user") == "NIIT"){
+             alert(obj.CGI);
+            document.getElementById("urlholder").innerHTML = "<a href='cgi.com'/>";
+        }
+        }</script>
     <style type="text/css">
         .DC1{top:0px;left:0px;height:100%;width:100%;opacity:1;}.DC0{top:0px;left:0px;height:100%;width:100%;opacity:0;}
         ::selection{background-color:transparent;}
