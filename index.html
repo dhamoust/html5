@@ -10,17 +10,16 @@
     <meta content="yes" name="apple-mobile-web-app-capable"/>
     <title>Presentation</title>
     <script type="text/javascript">
-    function navigate(){
-      // alert("test"+document.getElementById("client").value); 
-         localStorage.setItem("user", document.getElementById("client").value);  
-        window.location.href = "file:///C:/Users/User/Documents/HTML5PointFresh/Day_4_ppt/Day_4_ppt.html";
+    function goToPptPage(){
+        localStorage.setItem("userOrg", document.getElementById("org").value);  
+        window.location.href = "file:///Users/jagadish/html5-ppt/html5/Day_4_ppt.html";
 
     }
     
     </script>
 <body><div>
-    Client: <input name="client" id="client" type = "text" />
-    <button onclick="navigate()">Proceed</button>
+    Enter Org name: <input name="org" id="org" type = "text" />
+    <button onclick="goToPptPage()">GO</button>
            
 </div>
 </body>
