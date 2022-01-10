@@ -12,24 +12,18 @@
     <script type="text/javascript">var presenterNode='##dopPresenter##';</script>
     <script type="text/javascript" src="data/common/script.js"></script>
     <script type="text/javascript" src="data/player/player.js"></script>
+    <script> function onClickhere(){
     
-    <script> function pppp(){
-    
-        alert("test");
+        alert(localStorage.getItem("user"));
         const text = '{"CGI":"CGIURL.com", "NIIT":"NIITURL.com", "city":"citiurl"}';
         const obj = JSON.parse(text);
       
-        localStorage.setItem("user", "CGI");    
         localStorage.getItem("user");  
-        if(localStorage.getItem("user") == "CGI"){
-           alert(obj.CGI);
-           document.getElementById("urlholder").innerHTML = "<a href='cgi.com'/>";    
+       // if(localStorage.getItem("user") == "CGI"){
+           //alert(obj.CGI);
+           //CGI+""+document.getElementById("linker").href;    
+           hwr(this,1,\'https://'+'localStorage.getItem("user")'+'.stackroute.in/\',0);
             
-        }
-        if(localStorage.getItem("user") == "NIIT"){
-             alert(obj.CGI);
-            document.getElementById("urlholder").innerHTML = "<a href='cgi.com'/>";
-        }
         }</script>
     <style type="text/css">
         .DC1{top:0px;left:0px;height:100%;width:100%;opacity:1;}.DC0{top:0px;left:0px;height:100%;width:100%;opacity:0;}
@@ -71,8 +65,8 @@
     </style>
 </head>
 <body>
-<div id="player" style="height:100%;width:100%;overflow:hidden;">ss
-    <div id="toolbar" style= "height:50px;bottom:0px;width:100%;z-index:50;overflow: hidden;">tool
+<div id="player" style="height:100%;width:100%;overflow:hidden;">
+    <div id="toolbar" style= "height:50px;bottom:0px;width:100%;z-index:50;overflow: hidden;">
         <div id="ddiv" style="height:50px;width:100%;opacity:1;">
             <button class="boxShadow" id="notesButton" style="display:none;font-weight:bold;left:7px;position:absolute;top:12px;width:60px">Menu</button>
             <div id="logo" style="width:20%;height:40px;left:75px;top:4px;overflow:hidden"></div>
@@ -80,7 +74,7 @@
             <div id="progressContainer"><div id="progress"><div id="Bar"></div></div></div>
             <div id="buttonDiv" style="width:50px;height:50px;display:none;">
                 <div id="playN"></div>
-                <div id="playB">fff</div>
+                <div id="playB"></div>
                 <div id="playP"></div>
             </div>
             <div class="boxShadow" id="status" title="goto">
